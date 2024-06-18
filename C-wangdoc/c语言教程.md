@@ -1163,6 +1163,735 @@ int x = (3 + 4) * 5;
 
 
 
+ <table border="1" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para"><b>优先级</b></div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para"><b>运算符</b></div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para"><b>名称或含义</b></div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para"><b>使用形式</b></div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para"><b>结合方向</b></div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para"><b>说明</b></div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <div class="para" label-module="para">1</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">[]</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">数组下标</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">数组名[常量表达式]</div>
+                </td>
+                <td rowspan="4">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">()</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">圆括号</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">（表达式）/函数名(形参表)</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">.</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">成员选择（对象）</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">对象.成员名</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">-&gt;</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">成员选择（指针）</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">对象指针-&gt;成员名</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="11">
+                    <div class="para" label-module="para">2</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">-</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">负号运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">-表达式</div>
+                </td>
+                <td rowspan="11">
+                    <div class="para" label-module="para">右到左</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">(类型)</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">强制类型转换</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">(数据类型)表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">++</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">前置自增运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">++变量名</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">++</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">后置自增运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量名++</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">--</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">前置自减运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">--变量名</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">--</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">后置自减运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量名--</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符<sup class="sup--normal" data-sup="4" data-ctrmap=":4,">
+                            [4]</sup><a class="sup-anchor" name="ref_[4]_262524">&nbsp;</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">*</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">取值运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">*指针变量</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&amp;</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">取地址运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">&amp;变量名</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">!</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">逻辑非运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">!表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">~</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">按位取反运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">~表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">单目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">sizeof</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">长度运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">sizeof(表达式)</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    <div class="para" label-module="para">3</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">/</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">除</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式/表达式</div>
+                </td>
+                <td rowspan="3">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">*</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">乘</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式*表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">%</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">余数（取模）</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">整型表达式/整型表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <div class="para" label-module="para">4</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">+</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">加</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式+表达式</div>
+                </td>
+                <td rowspan="2">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">-</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">减</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式-表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <div class="para" label-module="para">5</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para"></div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">左移</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量</div>
+                </td>
+                <td rowspan="2">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&gt;&gt;</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">右移</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量&gt;&gt;表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <div class="para" label-module="para">6</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&gt;</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">大于</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式&gt;表达式</div>
+                </td>
+                <td rowspan="4">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&gt;=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">大于等于</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式&gt;=表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para"></div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">小于</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para"></div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">小于等于</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <div class="para" label-module="para">7</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">==</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">等于</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式==表达式</div>
+                </td>
+                <td rowspan="2">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">!=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">不等于</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式!= 表达式</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">8</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&amp;</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">按位与</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式&amp;表达式</div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">9</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">^</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">按位异或</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式^表达式</div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">10</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">|</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">按位或</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式|表达式</div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">11</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&amp;&amp;</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">逻辑与</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式&amp;&amp;表达式</div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">12</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">||</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">逻辑或</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式||表达式</div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">双目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">13</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">?:</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">条件运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式1? 表达式2: 表达式3</div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para">右到左</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">三目运算符</div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="11">
+                    <div class="para" label-module="para">14</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">赋值运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量=表达式</div>
+                </td>
+                <td rowspan="11">
+                    <div class="para" label-module="para">右到左</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">/=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">除后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量/=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">*=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">乘后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量*=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">%=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">取模后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量%=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">+=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">加后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量+=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">-=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">减后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量-=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para"></div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">左移后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&gt;&gt;=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">右移后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量&gt;&gt;=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">&amp;=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">按位与后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量&amp;=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">^=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">按位异或后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量^=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">|=</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">按位或后赋值</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">变量|=表达式</div>
+                </td>
+                <td width="174" height="30"><br></td>
+            </tr>
+            <tr>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">15</div>
+                </td>
+                <td width="89" height="30">
+                    <div class="para" label-module="para">,</div>
+                </td>
+                <td width="173" height="30">
+                    <div class="para" label-module="para">逗号运算符</div>
+                </td>
+                <td width="241" height="30">
+                    <div class="para" label-module="para">表达式,表达式,…</div>
+                </td>
+                <td width="107" height="30">
+                    <div class="para" label-module="para">左到右</div>
+                </td>
+                <td width="174" height="30">
+                    <div class="para" label-module="para">从左向右顺序运算</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
 
 
 # 流程控制
@@ -3521,7 +4250,7 @@ memcpy(a, b, sizeof(b));
 
 数组作为函数的参数，一般会同时传入数组名和数组长度。
 
-```
+```c
 int sum_array(int a[], int n) {
   // ...
 }
@@ -3536,7 +4265,7 @@ int sum = sum_array(a, 4);
 
 如果函数的参数是多维数组，那么除了第一维的长度可以当作参数传入函数，其他维的长度需要写入函数的定义。
 
-```
+```c
 int sum_array(int a[][4], int n) {
   // ...
 }
@@ -3556,7 +4285,7 @@ int sum = sum_array(a, 2);
 
 变长数组作为函数参数时，写法略有不同。
 
-```
+```c
 int sum_array(int n, int a[n]) {
   // ...
 }
@@ -3569,7 +4298,7 @@ int sum = sum_array(4, a);
 
 因为函数原型可以省略参数名，所以变长数组的原型中，可以使用`*`代替变量名，也可以省略变量名。
 
-```
+```c
 int sum_array(int, int [*]);
 int sum_array(int, int []);
 ```
@@ -3602,6 +4331,75 @@ int sum = sum_array((int []){2, 3, 4, 5}, 4);
 ```
 
 上面示例中，两种写法是等价的。第二种写法省掉了数组变量的声明，直接将数组字面量传入函数。`{2, 3, 4, 5}`是数组值的字面量，`(int [])`类似于强制的类型转换，告诉编译器怎么理解这组值。
+
+
+
+## 指针数组与数组指针
+
+### 数组指针
+
+指向一个数组的指针就是数组指针。定义数组指针的示例代码如下：
+
+```c
+int (*ap)[2];   //()  []  运算级别：1 左到右      *运算级别：2 右到左
+```
+
+以上代码定义了一个指向包含两个元素的数组的数组指针。
+
+### 指针数组
+
+如果一个数组的每一个元素都是指针，则这个数组是一个指针数组。定义指针数组的示例代码如下：
+
+```c
+char *chararr[] = {"Fortan", "C", "C++", "Basic"}
+```
+
+以上代码定义了一个指针数组并且对其进行了初始化，chararr数组的每个元素都存在着一个字符指针，初始化时每一个值都是一个字符串常量，而对应的字符指针存储了4个字符串第一个字符在内存中的位置。
+
+很多时候，使用指针数组来控制程序可以节约内存空间，也可以节约时间。
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+    // 指针数组pchar1的4个指针分别依次指向这4个字符串
+    char *pchar1[4] = {"china", "chengdu", "sichuang", "chongqing"};
+    int i, *pchar2[3];
+    int a[3] = {1, 2, 3};
+    int b[3][2] = {1, 2, 3, 4, 5, 6};
+
+    for (i = 0;i < 4;i++)
+    {
+        //输出pchar1数组4个指针指向的4个字符串
+        printf("\n%s", pchar1[i]);
+        printf("\n");
+    }
+
+    for (i = 0, i < 3;i++)
+    {
+        pchar2[i] = &a[i];  //将整形一维数组a的3个元素的地址传递给指针数组pchar2
+        for (j = 0;j < 3;j++)
+        {
+            printf("%4d", *pchar2[i]);
+            printf("\n");
+        }
+    }
+    for (i = 0; i < 3; i++)
+    {
+        pchar2[i] = b[i];  //传递二维数组b的每行首地址给指针数组的4个指针
+        for (i = 0; i < 3; i++)
+        {
+            printf("%4d%4d\n", *pchar2[i], *pchar2[i] + 1);
+        }
+    }
+}
+```
+
+### 总结
+
+**数组指针是一个指针变量，它指向一个数组。而指针数组是一个只包含指针元素的数组，它的元素可以指向相同类型的不同对象。**
 
 # 字符串
 
