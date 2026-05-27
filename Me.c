@@ -41,7 +41,7 @@
 
 /* ==================== 常量与类型定义 ==================== */
 
-/** @brief 内存句柄类型（本质是Slot表的索引） */
+/** @brief 内存句柄类型（本质是Slot表的索引） 别名 */
 typedef uint32_t MemHandle;
 
 #define INVALID_HANDLE 0xFFFFFFFF   /**< 无效句柄标识 */
@@ -63,11 +63,11 @@ typedef uint32_t MemHandle;
 
 /**
  * @struct BlockHeader
- * @brief 内存块头部元数据（24字节，8字节对齐）
+ * @brief 内存块头部元数据（32位系统24字节，64位系统32字节，8字节对齐）
  * 
  * @memory_layout 内存块逻辑布局
  * ```
- * Header  [ magic | data_size | is_free | slot* | next* ]  <- 24字节
+ * Header  [ magic | data_size | is_free | slot* | next* ]  <- 32字节(64位系统)
  * Payload [ data_size 字节数据 ]
  * ```
  * 
